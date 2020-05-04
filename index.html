@@ -9867,7 +9867,7 @@ Error message and password prompt
 
 CSS Grid</pre>
 </div>
-<div created="20200504032511468" creator="tom" modified="20200504034746130" modifier="tom" tags="CSS dev" title="CSS Grid">
+<div created="20200504032511468" creator="tom" modified="20200504035023919" modifier="tom" tags="CSS dev" title="CSS Grid">
 <pre>Similar to [[Flexbox|Flexbox]] insofar as initiating with a `display: grid` under container or element that needs formatting.
 
 Just this declaration isn't enough. It needs to be further defined in order to actually do anything.
@@ -9898,6 +9898,16 @@ E.g. an item with `grid-column: 2 / 4` means that the grid starts at the second 
 [img[Screenshot from 2020-05-04 15-44-36.png]]
 
 To do this with rows it is the exact same format, only with `grid-row` instead.
+
+For grid the content of each item is located in a box which is referred to as a &quot;cell&quot;. You can align the content's position within its cell horizontally using the `justify-self` property on a grid item just like you can with Flexbox.
+
+By default, `justify-self` will `stretch` content to fit the cell. Otherwise, one can use 
+
+`start:` aligns the content at the left of the cell,
+
+`center:` aligns the content in the center of the cell,
+
+`end:` aligns the content at the right of the cell.
 
 </pre>
 </div>
